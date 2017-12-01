@@ -1,4 +1,5 @@
 {
-  "name": "tourApp",
-  "displayName": "tourApp"
+  "expo": {
+    "sdkVersion": "23.0.0"
+  }
 }
