@@ -1,0 +1,213 @@
+#heading {
+    font-family: 'EB Garamond', serif;
+    color: white;
+    font-size: 80px;
+}
+
+h5, h4, h3, h2, p, button {
+    font-family: 'EB Garamond', serif;
+    color: white;
+}
+
+.gj-calendar {
+    z-index: 1051;
+}
+
+.whiteFont {
+    font-family: 'EB Garamond', serif;
+    color: white !important;
+}
+
+.blackFont {
+    font-family: 'EB Garamond', serif;
+    color: black !important;
+}
+
+.btn-space {
+    margin-right: 10px;
+}
+
+h3, p, button {
+    color: white;
+}
+
+h2 {
+    color: black;
+}
+
+a, input {
+    font-family: 'EB Garamond', serif;
+    color: darkslategray;
+}
+
+.content {
+    font-family: 'EB Garamond', serif;
+    color: darkslategray;
+}
+
+.input-group {
+    margin: 0 auto;
+}
+
+input {
+    border-radius: 8px !important;
+    padding: 15px !important; 
+}
+
+.wrapper {
+    text-align: center;
+}
+
+.left-box {
+    float: left;
+    background-color: white;
+    border-width: 1.5px !important;
+    border: solid;
+    border-color: lightgray;
+    border-radius: 8px !important;
+    height: 500px;
+}
+
+.card {
+    float: left;
+    background-color: white;
+    border-width: 1.5px !important;
+    border: solid;
+    border-color: darkgray;
+    border-radius: 8px !important;
+    width: 100%;
+    overflow: auto;
+}
+
+.card-body {
+    padding: 20px;
+    background-image: url("images/STHG_logo_gray.png");
+    background-size: 30%;
+    background-position: center 50px;
+    background-repeat: no-repeat;
+}
+
+.white {
+    color: white !important;
+}
+
+.btn-tour {
+    border-radius: 8px !important;
+    border-width: 1.5px !important;
+    padding: 10px 0px 10px 0px;
+    border: solid;
+    border-color: lightgray;
+    font-size: 16px;
+    width: 100%;
+    height: 60px;
+    white-space: normal;
+    margin: 10px;
+}
+
+.btn-warning {
+    background-color: #f0ad4e !important;
+    color: white !important;
+}
+
+.side-button {
+    color: gray;
+    background-color: transparent;
+}
+
+.btn-home {
+    border-radius: 8px !important;
+    border-width: 2px !important;
+}
+
+#navtabs {
+    float: left;
+}
+
+.navtop {
+    margin: 30px 30px 10px 25px;
+    padding: 10px;
+}
+
+#homepage, #signuppage {
+    background-image: url("images/savannahHomepage.jpg");
+    background-repeat: no-repeat;
+}
+
+@media only screen and (min-width: 400px) {
+    #homepage, #signuppage { 
+        background-image: url('images/savannahHomepage.jpg');
+        height: 600px;
+    }
+}
+
+#tourpage {
+    background-color: rgba(169,169,169,.7);
+    width: 90%;
+    height: 80%;
+    padding: 50px;
+    margin: 0 auto;
+    border-width: 1.5px !important;
+    border: solid;
+    border-color: lightgray;
+    border-radius: 8px !important;
+    margin-bottom: 50px;
+}
+
+.tab-content {
+    padding: 20px;
+}
+
+.tourpage {
+    background-image: url("images/savannahHomepage.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.sign {
+    color: white;
+    text-align: center;
+}
+
+.signin {
+    height: 30px;
+    width: 300px;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+.card-header {
+    color: darkslategray;
+    font-family: 'EB Garamond', serif;
+    font-size: 18px;
+}
+#loadSpinner {
+    width: 30px;
+    margin: 0 auto;
+}
+.fa-trash-o, .fa-pencil-square-o {
+    cursor: pointer;
+}
+.modal p, .modal .btn {
+    color: #444;
+}
+
+.modal-content {
+    width: 600px !important;
+    margin: 0 auto;
+}
+
+#shouldMap {
+    display: block;
+}
+textarea {
+    font-family: 'EB Garamond', serif;
+}
+table.checkData {
+    table-layout: fixed;
+}
+table.checkData td {
+    max-height: 50px;
+    overflow: auto;
+}
