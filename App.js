@@ -11,7 +11,7 @@ class WelcomeScreen extends React.Component {
   return (
     <View style= {styles.container} >
       <Image 
-        source={require('/Users/jessicagilligan/Desktop/Native/tourApp/imgs/STHG_logo_green.png')}
+        source={require('/imgs/STHG_logo_green.png')}
         style={ styles.image }
       />
       
