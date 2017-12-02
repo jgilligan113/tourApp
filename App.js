@@ -1,6 +1,6 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button } from 'react-native';
-import { StackNavigator } from 'react-navigation';
+import { StyleSheet, Text, View, Button, Image } from 'react-native';
+import { StackNavigator, TabNavigator } from 'react-navigation';
 
 class WelcomeScreen extends React.Component {
   static navigationOptions = {
@@ -9,18 +9,12 @@ class WelcomeScreen extends React.Component {
   render() {
   const { navigate } = this.props.navigation;
   return (
-    
-      <View style={{
-            flex: 1,
-            flexDirection: 'row',
-            justifyContent: 'center',
-            alignItems: 'center',
-          }}>
-            <Image 
-              source={require("../imgs/STHG_logo_green.png")}
-              style={{ height: 450, width: 320 }}
-            />
-      {/* <Text>Savannah Tour of Homes and Gardens</Text> */}
+    <View style= {styles.container} >
+      <Image 
+        source={require('/Users/jessicagilligan/Desktop/Native/tourApp/imgs/STHG_logo_green.png')}
+        style={ styles.image }
+      />
+      
       <Button
           onPress={() => navigate('User', {user: 'Molly'})}
           title="User"
@@ -95,7 +89,7 @@ class HomesScreen extends React.Component {
   render() {
   const { params } = this.props.navigation.state;
   return (
-    <View>
+    <View style= {styles.container} >
       <Text>Homes with images and cards possibly</Text>
     </View>
     );
@@ -133,12 +127,31 @@ class UserScreen extends React.Component {
   }
 }
 
+class TabOneScreen extends React.Component {
+  render() {
+    return <Text>TAB 1 HERE</Text>
+  }
+}
+
+class TabTwoScreen extends React.Component {
+  render() {
+    return <Text>TAB 2 HERE</Text>
+  }
+}
+
+const HomesScreenNavigator = TabNavigator({
+  One: { screen: TabOneScreen },
+  Two: { screen: TabTwoScreen },
+});
+
 const TourAppCRNA = StackNavigator({
   Welcome: { screen: WelcomeScreen },
   User: { screen: UserScreen},
   Friends: {screen: FriendsScreen },
   Sponsors: {screen: SponsorsScreen },
-  Homes: {screen: HomesScreen },
+  Homes: {screen: HomesScreenNavigator,
+    navigationOptions: {
+      title: 'Homes'}, },
   Favorites: {screen: FavoritesScreen },
   Map: { screen: MapScreen },
 });
@@ -151,9 +164,15 @@ export default class App extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    flexGrow: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center'
+  },
+  image: { 
+    alignItems: 'center',
+    justifyContent: 'center',
+    height: 360, 
+    width: 255
   }
 });
